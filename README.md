@@ -6,9 +6,9 @@ Scope: cryptographic and verification feasibility
 
 This repository documents the minimum technical and verification conditions that would need to hold for any ZEC pooled solvency proof system to be considered viable.
 
-It does not propose a product.
-It does not recommend deployment.
-It does not request funding.
+It does not propose a product.  
+It does not recommend deployment.  
+It does not request funding.  
 It does not assume that a viable system exists.
 
 Failure to meet feasibility conditions is an acceptable and expected outcome.
@@ -23,7 +23,7 @@ Specifically:
 - to document threat models and failure modes
 - to define what would need to be provable before pooled custody could be responsibly considered
 
-This work exists to prevent premature system-building driven by narrative or assumption rather than evidence.
+This work exists to counter premature system-building driven by narrative or assumption rather than evidence.
 
 ## Scope Constraints
 
@@ -116,29 +116,30 @@ This repository is part of a set of independent, descriptive process artifacts p
 
 Related repositories include:
 
-- **Process Layer Doctrine (PLD)**  
+- Process Layer Doctrine (PLD)  
   Defines execution hygiene invariants for governance and funding systems.  
-  PLD addresses how decisions are made legible and verifiable.  
+  Addresses how decisions are made legible and verifiable.  
   https://github.com/ShieldOrder/process-layer-doctrine
 
-- **Proposal Disclosure Schema (PDS)**  
+- Proposal Disclosure Schema (PDS)  
   A voluntary disclosure template for surfacing assumptions, risks, and verification surfaces in proposals.  
-  PDS addresses applicant-side clarity.  
+  Addresses applicant-side clarity.  
   https://github.com/ShieldOrder/proposal-disclosure-schema
 
-- **Evaluation Surfaces**  
+- Evaluation Surfaces  
   A taxonomy separating decision types from legitimacy signals to reduce category errors in governance evaluation.  
   https://github.com/ShieldOrder/evaluation-surfaces
 
 Relationship between repositories:
 
-- PDS addresses *input clarity*.
-- PLD addresses *process hygiene*.
-- Evaluation Surfaces addresses *evaluation semantics*.
-- This repository addresses *technical feasibility under strict constraints*.
+- PDS addresses input clarity.
+- PLD addresses process hygiene.
+- Evaluation Surfaces addresses evaluation semantics.
+- This repository addresses technical feasibility under strict constraints.
 
 Each repository is standalone, non-authoritative, and independently discardable.
 
 ## License
 
 CC0
+EOF
