@@ -140,6 +140,10 @@ Absence of a solution is a valid outcome.
 
 This repository is a filter, not a funnel.
 
+## Guardrails
+
+This repository includes a non-claims guardrail to prevent ungrounded endorsements, tool-theater, or false certainty:
+
 ## Versioning
 
 Current version is tracked in `VERSION`.
