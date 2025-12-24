@@ -1,38 +1,8 @@
-{
-  "schema_version": "v0.1",
-  "description": "Canonical test vector schema for pooled ZEC solvency feasibility",
-  "required_fields": {
-    "vector_id": "string",
-    "description": "string",
-    "expected_result": "PASS | FAIL",
-    "finality": {
-      "mode": "depth | explicit",
-      "value": "integer | string"
-    },
-    "public_inputs": {
-      "accounts_root": "hex",
-      "total_liabilities": "uint64",
-      "total_reserves": "uint64",
-      "reference": "string"
-    },
-    "proof": {
-      "proof_blob": "base64",
-      "circuit_id": "string",
-      "verifying_key_fingerprint": "string"
-    }
-  },
-  "adversarial_categories": [
-    "inflated_liabilities",
-    "reduced_reserves",
-    "altered_ledger_root",
-    "note_reuse_attempt",
-    "reorg_ambiguity"
-  ],
-  "determinism_rules": {
-    "canonical_json": "RFC 8785",
-    "overflow": "FAIL",
-    "missing_field": "FAIL",
-    "unexpected_field": "IGNORE",
-    "unexpected_field_semantics": "Unexpected fields MUST NOT influence verification inputs, semantics, or outcomes."
-  }
+"determinism_rules": {
+  "canonical_json": "RFC 8785",
+  "overflow": "FAIL",
+  "missing_field": "FAIL",
+  "unexpected_field": "IGNORE",
+  "unexpected_field_semantics": "Unexpected fields MUST NOT influence canonicalization, hashing, circuit inputs, parsing decisions, or PASS/FAIL outcomes."
 }
+
