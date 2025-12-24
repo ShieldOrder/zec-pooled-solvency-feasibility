@@ -12,7 +12,7 @@ The goal is clarity, not advocacy. If the conditions cannot be met, the system s
 
 ### Context
 
-Ideas involving pooled custody or delegated ZEC usage surface regularly. Historically, they fail in predictable ways: reliance on operator attestations, opaque accounting, unacknowledged privacy regressions, or dependence on external venues that reintroduce trust.
+Ideas involving pooled custody or delegated ZEC usage surface regularly. cHistorically, they fail in predictable ways: reliance on operator attestations, opaque accounting, unacknowledged privacy regressions, or dependence on external venues that reintroduce trust.  This work does not treat yield generation, capital efficiency, or return optimization as requirements or objectives.
 
 Rather than debating desirability, this work asks a narrower question: what would need to be provably true for such a system to avoid being structurally unsound?
 
