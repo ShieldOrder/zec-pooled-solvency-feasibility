@@ -16,3 +16,7 @@ Verification must be permissionless, deterministic, and reproducible.
 - Output is binary: PASS or FAIL
 
 Any deviation from this profile invalidates verification.
+
+if [ -f verification/verification-profile-v0.1.md ]; then
+  if ! grep -q "Anchor acquisition model" verification/verification-profile-v0.1.md; then
+    cat >> verification/verification-profile-v0.1.md <<
