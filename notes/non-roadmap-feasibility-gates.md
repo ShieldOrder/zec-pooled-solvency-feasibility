@@ -1,53 +1,56 @@
 # Non-Roadmap: Feasibility Gates
 
-Status: dependency graph, not a timeline
+Status: dependency graph, not a timeline  
+Posture: descriptive, non-prescriptive  
+Scope: feasibility gating only
 
-All steps are conditional. Stopping is an acceptable result.
+All steps are conditional. Stopping is an acceptable and correct outcome.
+
+This document does not describe a plan, commitment, or intent to execute work.
+It enumerates logical dependency gates that must be satisfied for feasibility to hold.
 
 ## Phase 0: Framing
 
 Deliverable:
-- This repository
+- This repository and its constraints
 
 Exit:
-- If assumptions or framing are flawed, stop.
+- If assumptions, scope, or constraints are internally inconsistent, stop.
 
-## Phase 1: Feasibility prototype (if independently and externally funded)
+## Phase 1: Feasibility construction attempt (conditional)
 
-Estimated duration: 2–3 months  
-Estimated budget: 50k–100k USD  
-Required capability: production Halo 2 experience
+This phase exists only to test whether the feasibility gates can be satisfied
+under the stated constraints.
 
-Deliverables:
-- Halo 2 circuit demonstrating ledger correctness, Orchard reserve control, and reserves >= liabilities
-- Deterministic offline verifier with binary PASS or FAIL output
-- Canonical test vectors, including negative cases
-- Circuit specification with explicit constraints and public inputs
-- Performance benchmarks with disclosed hardware context
+No execution, deployment, or production readiness is implied.
+
+Candidate artifacts (if feasible):
+- A construction sketch or circuit outline sufficient to evaluate feasibility
+- A verifier definition under an explicit anchor acquisition model
+- Canonical negative cases demonstrating failure modes
+- Explicit performance bounds, if relevant to feasibility
 
 Primary risk focus:
-Cross-epoch Orchard note reuse and ambiguity introduced by chain reorgs. These are known failure modes in height-anchored constructions.
+- Cross-epoch Orchard note reuse
+- Ambiguity introduced by chain reorgs or unverifiable anchors
 
-Phase 1 must either prevent these issues or make them publicly detectable.
-
-Finality posture (feasibility surface, not a commitment):
-- Proof anchoring must declare its finality assumption (depth threshold or explicit detection model).
-- If reorg effects cannot be handled without unacceptable false positives or unverifiable assumptions, stop.
+If these risks cannot be prevented or made publicly detectable, feasibility fails.
 
 Exit conditions:
-- Unsound circuit
-- Non-deterministic verification
+- Unsound or under-specified construction
+- Verification dependent on implicit trust
 - Unverifiable artifacts
-- Impractical performance
-- No credible handling of note reuse or reorg effects
-- Budget or duration exceeded by more than 50 percent
+- Inability to define continuity or anchor semantics
+- Infeasibility demonstrated under stated constraints
 
-## Phase 2: Adversarial review
+## Phase 2: Adversarial review (if Phase 1 passes)
 
-Security audit, red team exercise, and public scrutiny.
+Independent critique, red-team analysis, and public scrutiny.
 
 ## Phase 3: Conditional discussion
 
-No commitments implied. Ecosystem judgment applies.
+No commitments implied.
+Any downstream judgment is external to this repository.
 
-This is not a roadmap.
+This document is not a roadmap.
+EOF
