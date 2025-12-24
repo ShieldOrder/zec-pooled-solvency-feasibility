@@ -5,7 +5,8 @@ Status: feasibility analysis
 Posture: descriptive, adversarial to assumptions, non-prescriptive
 Scope: cryptographic and verification feasibility under explicit constraints
 
-This repository documents the minimum technical and verification conditions that would need to hold for any ZEC pooled solvency proof system to be considered viable.
+This repository specifies the minimum cryptographic and governance conditions that would need to hold before any pooled ZEC custody system could be considered acceptable.
+It does not assume that pooled custody, yield generation, or capital aggregation is desirable or appropriate.
 
 It does not propose a product.
 It does not recommend deployment.
