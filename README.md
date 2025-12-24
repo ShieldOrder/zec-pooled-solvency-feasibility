@@ -66,6 +66,8 @@ Out of scope:
 - governance, policy, or regulatory positioning
 - changes to Zcash consensus rules
 - claims about desirability, adoption, or incentives
+ 
+This analysis does not assume that pooled custody should generate yield, returns, or economic advantage.
 
 ## Primary adversaries
 
@@ -163,7 +165,7 @@ A verifier must be able to:
 - authenticate the anchor’s inclusion in the canonical chain under an explicit anchor acquisition model
 - reason about reorg depth and finality assumptions
 
-Proofs anchored to unverifiable or orphaned states are invalid.
+Proofs are infeasible unless they are bound to a verifiable canonical chain anchor.
 
 ### Gate 3: Liability inclusion verifiability
 
