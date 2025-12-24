@@ -25,3 +25,9 @@ Ensure that independent verifiers produce identical results from identical input
 - Pure function behavior
 
 Violation of any rule invalidates the verification result.
+
+### Scope limitation
+
+This document does not define numeric bounds, arithmetic domains, or field limits.
+All such limits must be explicitly specified in the corresponding feasibility or circuit specification.
+EOF
