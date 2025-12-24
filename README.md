@@ -55,7 +55,7 @@ The protocol must support proving control of shielded reserves across time witho
 - enabling note reuse across epochs
 - requiring protocol changes
 
-If no such primitive exists under current Orchard semantics, pooled solvency continuity is infeasible.
+If no such primitive exists under current Orchard semantics, pooled solvency continuity is infeasible.  If Gate 1 fails, the repository halts with a documented infeasibility result.  No further gates are evaluated.
 
 ### Gate 2: Epoch Safety and Reorg Robustness
 
