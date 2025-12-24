@@ -4,63 +4,62 @@ Status: feasibility analysis artifact
 Posture: descriptive, adversarial to assumptions, non-prescriptive  
 Scope: cryptographic and verification feasibility under explicit constraints
 
-This repository exists to test whether specific cryptographic and verification claims can be made rigorous.
+This repository examines whether specific cryptographic constructions and verification claims are feasible under stated constraints.
 
-It does not assume that a viable system exists.
-It does not assume that a viable system should exist.
+It is not a product effort.
+It is not a deployment plan.
+It does not assume a viable system exists.
 
 Failure, impossibility, or abandonment are valid and informative outcomes.
 
-## Contribution Posture
+## What contributions are for
 
-Contributions are welcome when they improve:
+Contributions are intended to:
 
-- rigor
-- falsifiability
-- clarity of assumptions
-- explicitness of constraints
-- explicitness of failure conditions
+- increase rigor
+- reduce ambiguity
+- surface hidden assumptions
+- tighten threat models
+- clarify verification boundaries
+- identify explicit failure conditions
 
-Contributions should treat feasibility as an open question, not a goal.
+Contributions should treat feasibility as an open question, not an objective.
 
-## In Scope
-
-Contributions may include:
+## In scope
 
 - Cryptographic soundness analysis
 - Proof sketch critique or gap identification
-- Threat model expansion or adversary refinement
+- Threat model critique or expansion
 - Deterministic verification analysis
 - Canonical serialization review
 - Negative or adversarial test vector design
 - Reorg, finality, and chain state analysis
-- Explicit impossibility or infeasibility arguments
+- Explicit infeasibility or impossibility arguments
 
-All claims should be supported by artifacts, not intent.
+All claims should be grounded in artifacts.
 
-## Out of Scope
-
-The following are explicitly out of scope:
+## Out of scope
 
 - Product framing or roadmap discussion
-- UX, wallet, or integration considerations
+- Wallet or UX considerations
+- Integration planning
 - Yield, incentive, or economic modeling
 - Governance, policy, or regulatory advocacy
-- Assumptions of deployment or adoption
+- Assumptions of adoption or deployment
 - Scope expansion beyond stated feasibility constraints
 
-## Contribution Discipline
+## Contribution discipline
 
 When contributing:
 
-- State assumptions explicitly
-- Name trust boundaries
-- Identify failure modes
-- Prefer disproof to optimism
-- Treat missing artifacts as blocking defects
-- Avoid narrative justification in place of evidence
+- state assumptions explicitly
+- name trust boundaries
+- identify failure modes
+- prefer counterexamples over optimism
+- treat missing artifacts as blocking defects
+- avoid narrative justification in place of evidence
 
-A contribution that weakens feasibility is still a successful contribution.
+A contribution that weakens feasibility is a successful contribution.
 
 ## Disagreement
 
@@ -71,10 +70,10 @@ Disputes should be expressed through:
 - counterexamples
 - alternative constructions
 - revised threat models
-- tighter constraints
+- tighter or conflicting constraints
 
 This repository does not arbitrate conclusions.
 
 ## License
 
-All contributions are accepted under CC0.
+CC0
