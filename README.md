@@ -144,6 +144,8 @@ This repository is a filter, not a funnel.
 
 This repository includes a non-claims guardrail to prevent ungrounded endorsements, tool-theater, or false certainty:
 
+- `docs/non-claims.md`
+
 ## Versioning
 
 Current version is tracked in `VERSION`.
