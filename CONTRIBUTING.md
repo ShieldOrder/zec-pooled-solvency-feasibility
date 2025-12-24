@@ -1,57 +1,55 @@
 # Contributing
 
 Status: feasibility analysis artifact  
-Posture: descriptive, adversarial to assumptions, non-prescriptive  
-Scope: cryptographic and verification feasibility under explicit constraints
+Posture: adversarial to assumptions, non-prescriptive  
+Scope: cryptographic and verification feasibility
 
 This repository examines whether specific cryptographic constructions and verification claims are feasible under stated constraints.
 
 It is not a product effort.
 It is not a deployment plan.
-It does not assume a viable system exists.
+It does not assume feasibility.
 
-Failure, impossibility, or abandonment are valid and informative outcomes.
+Failure, impossibility, or abandonment are valid outcomes.
 
-## What contributions are for
+## What Contributions Are For
 
-Contributions are intended to:
-
+Contributions should:
 - increase rigor
 - reduce ambiguity
 - surface hidden assumptions
 - tighten threat models
-- clarify verification boundaries
 - identify explicit failure conditions
+- provide counterexamples or impossibility arguments
 
-Contributions should treat feasibility as an open question, not an objective.
+Weakening feasibility is a successful contribution.
 
-## In scope
+## In Scope
 
 - Cryptographic soundness analysis
 - Proof sketch critique or gap identification
+- Primitive availability analysis
 - Threat model critique or expansion
 - Deterministic verification analysis
 - Canonical serialization review
-- Negative or adversarial test vector design
-- Reorg, finality, and chain state analysis
-- Explicit infeasibility or impossibility arguments
+- Adversarial or negative test vectors
+- Reorg, finality, and chain-state analysis
+- Explicit infeasibility arguments
 
-All claims should be grounded in artifacts.
+All claims must be grounded in artifacts.
 
-## Out of scope
+## Out of Scope
 
 - Product framing or roadmap discussion
 - Wallet or UX considerations
 - Integration planning
-- Yield, incentive, or economic modeling
-- Governance, policy, or regulatory advocacy
+- Economic or incentive modeling
+- Governance or policy advocacy
 - Assumptions of adoption or deployment
-- Scope expansion beyond stated feasibility constraints
 
-## Contribution discipline
+## Contribution Discipline
 
 When contributing:
-
 - state assumptions explicitly
 - name trust boundaries
 - identify failure modes
@@ -59,14 +57,11 @@ When contributing:
 - treat missing artifacts as blocking defects
 - avoid narrative justification in place of evidence
 
-A contribution that weakens feasibility is a successful contribution.
-
 ## Disagreement
 
 Disagreement is expected.
 
 Disputes should be expressed through:
-
 - counterexamples
 - alternative constructions
 - revised threat models
