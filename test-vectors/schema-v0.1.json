@@ -32,6 +32,7 @@
     "canonical_json": "RFC 8785",
     "overflow": "FAIL",
     "missing_field": "FAIL",
-    "unexpected_field": "IGNORE"
+    "unexpected_field": "IGNORE",
+    "unexpected_field_semantics": "Unexpected fields MUST NOT influence verification inputs, semantics, or outcomes."
   }
 }
